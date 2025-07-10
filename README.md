@@ -24,7 +24,7 @@ O monitoramento permite acompanhar o desempenho e detectar eventos importantes n
 
 No portal do Azure, acesse sua VM e clique em **"Monitoramento"** no menu lateral.
 
-![Painel de Monitoramento da VM](images/portal_vm_monitor.png)
+![Painel de Monitoramento da VM](/portal_vm_monitor.png)
 
 ---
 
@@ -40,7 +40,7 @@ Se a opção de insights não estiver ativa, habilite e conecte a um workspace.
 
 Depois de habilitado, vá em **"Métricas"** e selecione a métrica desejada (CPU, disco etc.).
 
-![Exemplo de Dashboard com Métricas](images/metrics_dashboard.png)
+![Exemplo de Dashboard com Métricas](/metrics_dashboard.png)
 
 ---
 
@@ -54,7 +54,7 @@ Para receber notificações em caso de exclusão de uma VM, crie uma **regra de 
    - *Operation Name* = `Delete Virtual Machine`
 4. Ações: notificação por e-mail ou webhook
 
-![Alerta para Exclusão de VM](images/alert_rule_delete_vm.png)
+![Alerta para Exclusão de VM](/alert_rule_delete_vm.png)
 
 ---
 
