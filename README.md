@@ -32,7 +32,7 @@ No portal do Azure, acesse sua VM e clique em **"Monitoramento"** no menu latera
 
 Se a opção de insights não estiver ativa, habilite e conecte a um workspace.
 
-![Habilitar Log Analytics](images/enable_log_analytics.png)
+![Habilitar Log Analytics](/enable_log_analytics.png)
 
 ---
 
