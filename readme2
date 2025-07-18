@@ -1,0 +1,124 @@
+Guia Introdutório: Gerenciamento de Máquinas Virtuais (VMs) no Microsoft Azure
+
+Este repositório tem como objetivo ensinar, de forma simples e prática, como **gerenciar máquinas virtuais (VMs)** no Microsoft Azure. Ideal para iniciantes que desejam aprender a criar, configurar, acessar e administrar VMs na nuvem.
+
+---
+
+## ✅ 1. Introdução ao Gerenciamento de VMs no Azure
+
+As **máquinas virtuais** são fundamentais para qualquer infraestrutura em nuvem. Com elas, você pode hospedar aplicações, criar ambientes de teste, executar scripts e muito mais.
+
+No Azure, o gerenciamento de VMs envolve:
+
+- Criação e configuração da VM  
+- Acesso via RDP (Windows) ou SSH (Linux)  
+- Início, parada, reinicialização e exclusão  
+- Monitoramento de status e desempenho  
+- Gerenciamento de rede, disco e segurança
+
+---
+
+## 🛠️ 2. Criando sua primeira VM
+
+### 🔹 Etapa 1: Acesse o Portal do Azure
+
+Link: [https://portal.azure.com](https://portal.azure.com)
+
+### 🔹 Etapa 2: Criar nova VM
+
+1. No menu lateral, clique em **"Máquinas virtuais"**
+2. Clique em **"+ Criar" > "Máquina Virtual"**
+3. Preencha os campos básicos:
+   - Assinatura, grupo de recursos
+   - Nome da VM, região e imagem (ex: Ubuntu, Windows Server)
+   - Tamanho da VM (ex: Standard_B1s)
+   - Nome de usuário e chave SSH ou senha
+
+4. Clique em **"Revisar + Criar"** e depois em **"Criar"**
+
+📸 *Imagem sugerida:* `images/criar_vm_basico.png`
+
+---
+
+## 🔧 3. Acessando a VM
+
+### Para Windows:
+
+- Use o **RDP** (Remote Desktop Protocol)
+- No portal, clique em **"Conectar" > RDP**
+- Baixe o arquivo `.rdp` e abra no seu computador
+
+📸 *Imagem sugerida:* `images/conectar_rdp.png`
+
+### Para Linux:
+
+- Use o **SSH**
+- No portal, clique em **"Conectar" > SSH**
+- Copie o comando de conexão e execute no terminal
+
+📸 *Imagem sugerida:* `images/conectar_ssh.png`
+
+---
+
+## ⚙️ 4. Ações comuns de gerenciamento
+
+Acesse a VM pelo portal e utilize os seguintes controles:
+
+| Ação                | Descrição                                           |
+|---------------------|----------------------------------------------------|
+| **Iniciar / Parar** | Liga ou desliga a VM                               |
+| **Reiniciar**       | Reinicializa o sistema operacional da VM           |
+| **Excluir**         | Remove a VM permanentemente                        |
+| **Capturar**        | Gera uma imagem da VM atual                        |
+| **Redimensionar**   | Altera o tipo/tamanho da máquina                   |
+| **Resetar senha**   | Atualiza usuário ou senha de acesso à VM           |
+
+📸 *Imagem sugerida:* `images/acoes_gerais_vm.png`
+
+---
+
+## 🛡️ 5. Gerenciar rede e segurança
+
+- Configure regras de firewall (NSG) para acesso remoto (RDP/SSH)
+- Acesse a aba **"Rede"** da VM para:
+  - Abrir/fechar portas
+  - Ver IP público
+  - Associar IP estático
+
+📸 *Imagem sugerida:* `images/rede_nsg_vm.png`
+
+---
+
+## 💡 6. Boas práticas de gerenciamento
+
+- Use **grupos de recursos** para organizar seu ambiente  
+- Sempre pare a VM se não estiver usando (evita cobrança)  
+- Proteja o acesso com **NSG + autenticação multifator**  
+- Faça **backup da VM** regularmente  
+- Use **tags** para identificar o propósito de cada VM
+
+---
+
+## 📚 7. Glossário para iniciantes
+
+| Termo     | Definição                                                                 |
+|-----------|---------------------------------------------------------------------------|
+| VM        | Máquina virtual executada na nuvem                                        |
+| RDP       | Protocolo de conexão remota (Windows)                                     |
+| SSH       | Acesso remoto via terminal (Linux)                                        |
+| NSG       | Network Security Group — controla as regras de entrada e saída da rede    |
+| SKU       | Tipo/tamanho da VM (CPU, RAM)                                             |
+
+---
+
+## 📝 8. Leitura complementar
+
+- [Documentação oficial de VMs no Azure](https://learn.microsoft.com/pt-br/azure/virtual-machines/)
+- [Como criar uma VM](https://learn.microsoft.com/pt-br/azure/virtual-machines/windows/quick-create-portal)
+- [Acesso via SSH](https://learn.microsoft.com/pt-br/azure/virtual-machines/linux/ssh-from-windows)
+- [Boas práticas de segurança em VMs](https://learn.microsoft.com/pt-br/azure/security/fundamentals/iaas)
+
+---
+
+🎉 **Pronto! Agora você já sabe como criar e gerenciar VMs no Azure.**  
+Este repositório pode ser expandido com tutoriais, exemplos e automações. Contribuições são bem-vindas!
